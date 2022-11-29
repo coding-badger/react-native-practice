@@ -1,2 +1,0 @@
-# LootBag
-Smartphone App

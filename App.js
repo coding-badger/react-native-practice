@@ -38,6 +38,6 @@ const styles = StyleSheet.create({
     padding: 10,
     borderWidth: 36,
     borderRadius: 50,
-    borderColor: "gray",
-  }
+    borderColor: "gray",         
+  }  
 });

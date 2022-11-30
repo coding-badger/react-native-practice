@@ -4,8 +4,9 @@ import { StyleSheet, Text, View, Button } from "react-native";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.mainText}>Hello World!</Text>
-      <Button title="Hi" />
+      <Text style={styles.mainText}>LootBag</Text>
+      <Text style={styles.subText}>What kinda bag you caryin.</Text>
+      <Button title="Log In" />
       <StatusBar style="auto" />
     </View>
   );
@@ -18,11 +19,25 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+
   mainText: {
     margin: 10,
     padding: 10,
-    borderWidth: 3,
-    borderRadius: 5,
+    borderWidth: 12,
+    borderRadius: 25,
     borderColor: "gray",
+    
   },
+
+  subText: {
+    
+  },
+
+  button: {
+    margin: 10,
+    padding: 10,
+    borderWidth: 36,
+    borderRadius: 50,
+    borderColor: "gray",
+  }
 });

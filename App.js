@@ -1,43 +1,45 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet, Text, View, Button, TextInput } from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.mainText}>LootBag</Text>
-      <Text style={styles.subText}>What kinda bag you caryin.</Text>
-      <Button title="Log In" />
-      <StatusBar style="auto" />
+    <View style={styles.appContainer}>
+      <View style={styles.inputContainer}>
+        <TextInput style={styles.textInput} placeholder='Your course goal' />
+        <Button title='Add Goal' />
+      </View>
+      <View style={styles.goalsContainer}>
+        <Text >List of goals...</Text>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  appContainer: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    paddingTop: 50,
+    paddingHorizontal: 16,
   },
-
-  mainText: {
-    margin: 10,
-    padding: 10,
-    borderWidth: 12,
-    borderRadius: 25,
-    borderColor: "gray",
-    
+  inputContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingRight: 12,
+    marginBottom: 24,
+    borderBottomWidth: 1,
+    borderBottomColor: '#cccccc'
   },
-
-  subText: {
-    
+  textInput: {
+    borderWidth: 1,
+    borderColor: '#cccccc',
+    width: '70%', //this takes 80% of the containers width
+    marginRight: 8,
+    padding: 8,
   },
-
-  button: {
-    margin: 10,
-    padding: 10,
-    borderWidth: 36,
-    borderRadius: 50,
-    borderColor: "gray",         
-  }  
+  goalsContainer: {
+    flex: 6,
+    paddingTop: 10
+  }
 });

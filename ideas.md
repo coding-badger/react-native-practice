@@ -1,3 +1,24 @@
+///////////////////////GOALS///////////////////////
+-Loading Page
+    -Logo
+        -Text
+
+-Welcome Page
+    -Welcome to your LootStash Library
+
+-Landing Page
+    
+
+
+///////////////////////////////////////////////////
+
+
+
+
+
+
+
+
 Loading Page
 
 
